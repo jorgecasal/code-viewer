@@ -27,6 +27,7 @@ body{
 
 .editor-container.collapsed .CodeMirror-scroll{
     position: absolute;
+    overflow: hidden !important;
 }
 
 .editor-title{
@@ -44,6 +45,7 @@ body{
     color: white;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 
 .CodeMirror{

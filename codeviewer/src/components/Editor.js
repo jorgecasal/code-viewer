@@ -17,7 +17,7 @@ export default function Editor({displayName, language, value, onChange}) {
         <div className={`editor-container ${open ? '' : 'collapsed'}`}>
             <div className="editor-title">
                 {displayName}
-                <button className="btn" onClick={()=> setOpen(prevOpen => !prevOpen)}>
+                <button className="btn" type="button" onClick={()=> setOpen(prevOpen => !prevOpen)}>
                 <FontAwesomeIcon icon={ open ? faMinusSquare : faPlusSquare}/>
                 </button>
             </div>

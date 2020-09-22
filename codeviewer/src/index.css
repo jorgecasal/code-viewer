@@ -2,14 +2,11 @@ body{
     margin: 0;
 }
 
-.top-pane{
-    background-color: #8a8a8a;
-}
-
 .pane{
 
     height: 50vh;
     display: flex;
+    background-color: white;
 }
 
 .editor-container{

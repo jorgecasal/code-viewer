@@ -5,7 +5,8 @@ function App() {
   const [html, setHTML] = useState('');
   const [css, setCSS] = useState('');
   const [js, setJS] = useState('');
-  
+  const [rcDoc, setSrcDoc] = useState('');
+
 
   useEffect(() => {
     const timeout = setTimeout(()=>{

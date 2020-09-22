@@ -1,11 +1,11 @@
-import React, { useState, useEffect }, [input]) }from 'react';
+import React, { useState, useEffect } from 'react';
 import Editor from './Editor';
 
 function App() {
   const [html, setHTML] = useState('');
   const [css, setCSS] = useState('');
   const [js, setJS] = useState('');
-  const [rcDoc, setSrcDoc] = useState('');
+  const [srcDoc, setSrcDoc] = useState('');
 
 
   useEffect(() => {
@@ -17,10 +17,11 @@ function App() {
         <script>${js}</script>
       </html>
       `)
-    }, 250)
+    }, 1000)
+
+    return () => clearTimeout(timeout)
   }, [html, css, js])
 
-  const srcDoc = 
 
   return (
     <panes>
